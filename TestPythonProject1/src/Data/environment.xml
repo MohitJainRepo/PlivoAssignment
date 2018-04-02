@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<services>  
+	<api name = "getAllNumbers">
+		<url>https://api.plivo.com/v1/Account/{0}/Number/</url>
+		<requestmethod>GET</requestmethod>
+		<payloadrequired>false</payloadrequired>
+		<queryparamsrequired>true</queryparamsrequired>
+	</api>
+	<api name = "sendMessage">
+		<url>https://api.plivo.com/v1/Account/{0}/Message/</url>
+		<requestmethod>POST</requestmethod>
+		<payloadrequired>true</payloadrequired>
+		<queryparamsrequired>true</queryparamsrequired>
+	</api>
+	<api name = "getMessageDetail">
+		<url>https://api.plivo.com/v1/Account/{0}/Message/{1}</url>
+		<requestmethod>GET</requestmethod>
+		<payloadrequired>false</payloadrequired>
+		<queryparamsrequired>true</queryparamsrequired>
+	</api>
+		<api name = "getPricing">
+		<url>https://api.plivo.com/v1/Account/{0}/Pricing?country_iso={1}</url>
+		<requestmethod>GET</requestmethod>
+		<payloadrequired>false</payloadrequired>
+		<queryparamsrequired>true</queryparamsrequired>
+	</api>
+		<api name = "getAccountDetails">
+		<url>https://api.plivo.com/v1/Account/{0}</url>
+		<requestmethod>GET</requestmethod>
+		<payloadrequired>false</payloadrequired>
+		<queryparamsrequired>true</queryparamsrequired>
+	</api>
+</services>  
